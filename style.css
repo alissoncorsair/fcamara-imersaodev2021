@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.logo {
+    position: relative;
+    max-width: 10%;
+    margin-bottom: 1vh;
+    margin-left: 3vh;
+    margin-top: 1vh;
+}
+
+.principal {
+    max-height: 100%;
+    max-width: 100%;
+    background-color: #5251A2;
+}
+
+.centro {
+    display: flex;
+    flex-direction: column;
+}
+
+.texto-imagem {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.texto-imagem img {
+    height: 320px;
+    width: 370px;
+    margin-top: 2vh;
+    margin-bottom: 1vh;
+}
+
+.texto-imagem .span-volta {
+    color: white;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 1.2em;
+}
+
+.texto-imagem .span-planejamento {
+    color: #5251A2;
+    color: white;
+    font-weight: 800;
+}
+
+.texto-imagem .span-opcional {
+    color: white;
+    font-weight: 800;
+}
+
+.texto-imagem p {
+    text-align: center;
+    line-height: 2em;
+    color: white;
+    font-weight: 300;
+    font-size: 15px;
+    text-align: center;
+    padding: 0 27.5% 0 27.5%;
+}
+
+.informacoes {
+    background-color: white;
+    padding-bottom: 4%;
+}
+
+.informacoes-titulo {
+    font-size: 28px;
+    padding-top: 1.7%;
+    text-align: center;
+    color: #FE4400;
+}
+
+.info:nth-of-type(1) {
+    margin-top: 1.7%;
+}
+
+.info {
+    font-style: italic;
+    font-weight: 450;
+    text-align: center;
+    padding: 0 28% 0 28%;
+    margin-top: 0.5%;
+}
+
+.laranja {
+    color: #FE5517;
+    font-weight: 600;
+}
+
+.container {
+    margin: 0 auto;
+}
+
+.grid {
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    text-align: center;
+    justify-items: center;
+    justify-content: center;
+}
+
+.grid article {
+    text-align: center;
+    width: 200px;
+    transition: transform .2s;
+}
+
+.grid article:hover {
+    transform: translateY(10px);
+}
+
+.grid article img {
+    margin-top: 2%;
+    width: 50%;
+}
+
+.text {
+    font-weight: 450;
+    padding: 10px 20px 20px;
+}
+
+.rodape {
+    display: flex;
+    padding: 20px 0px 60px 0px;
+    flex-direction: column;
+    background-color: #303033;
+    max-width:100%;
+
+}
+
+.footerFrase {
+    margin: 0 auto;
+    display: flex;
+    padding: 25px;
+    color: white;
+    font-weight: 800;
+    text-align: center;
+}
+
+.redes {
+    display: flex;
+    flex-direction: row; 
+    justify-content:center;
+}
+
+.redes svg {
+    display: block;
+    fill: white;
+}
+
+.redes a {
+    display:inline-block;
+}
+
+svg:hover {
+    cursor: pointer;
+    fill: #FE5517;
+    transition: .3s;
+}
+
+.direitos {
+    text-align: center;
+    padding-top: 20px;
+    font-weight: 600;
+}
+
+.logoFooter {
+    position: relative;
+    width: 12rem;
+    align-self: center;
+    margin-top: 18px;
+}
+
+@media screen and (max-width: 600px) {
+    .logo {
+        position: relative;
+        width: 15vh;
+        height: 5vh;
+        margin: auto;
+        margin-bottom: 5%;
+        max-width: 20vh;
+    }
+    .centro {
+        padding: 20px;
+    }
+    .texto-imagem p {
+        text-align: center;
+        line-height: 2em;
+        color: white;
+        font-weight: 300;
+        font-size: 13px;
+        text-align: center;
+        padding: 2px;
+        padding-bottom: 15px;
+    }
+    .texto-imagem img {
+        height: 220px;
+        width: 270px;
+        margin-top: 2vh;
+        margin-bottom: 1vh;
+    }
+    .informacoes {
+        padding: 20px;
+    }
+    .informacoes-titulo {
+        margin-top: 2%;
+    }
+    .info {
+        font-style: italic;
+        font-weight: 450;
+        text-align: center;
+        padding: 5% 2% 0 2%;
+        margin-top: 0.5%;
+    }
+    .grid {
+        height: auto;
+        margin: 80px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 20px;
+        text-align: center;
+        justify-items: center;
+        justify-content: center;
+    }
+    .grid article:hover {
+        transform: none;
+    }
+    .grid article {
+        text-align: center;
+        width: 200px;
+    }
+    .grid article img {
+        margin-top: 2%;
+        width: 40%;
+    }
+
+    .logoFooter{
+        width: 30%;
+    }
+
+    .footerFrase {
+        font-size: 16px;
+    }
+
+    .direitos {
+        font-size: 55%;
+    }
+
+    .redes a, .redes svg {
+        width: 30px
+    }
+}
+
+
+@media screen and (max-width: 823px) {
+    .grid {
+        grid-template-columns: repeat(1, 1fr);
+    } 
+}
+
+@media screen and (min-width: 4800px) {
+    .grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
